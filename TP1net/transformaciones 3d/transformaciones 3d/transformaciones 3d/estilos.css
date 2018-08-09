@@ -1,0 +1,106 @@
+body{
+user-select:none;
+}
+
+.botones{
+		position: fixed;
+		top:80px;
+		left:650px;
+		width: 345px;
+		display: inline-block;
+		height: 465px;
+		
+	}
+
+	.hide{
+		display: none;
+	}
+
+	.botones-right{
+		position: fixed;
+		top:80px;
+		left:995px;
+		width: 345px;
+		display: inline-block;
+		height: 465px;
+		
+	}
+	
+	.btn{
+		width:80%;
+		height: 75px;
+		margin: 15px auto;
+		background-color: black;
+		color:white;
+		display:block;
+		border: none;
+	
+	}
+
+	footer{
+	 position: absolute;
+  	 right: 0;
+ 	 bottom: 0;
+  	 left: 0;
+         padding: 1rem;
+         background-color: #efefef;
+         text-align: center;	
+	}
+
+	#tooltip{
+		user-select: none;
+		position: relative;
+	    left: 150px;
+	    top: 280px;
+	    font-weight:bold;
+	}	
+
+	.floatright{
+
+	}
+
+	input[type="range"]{
+	width: 100%;
+	}
+
+	.range-container{
+		background-color: black;
+		height: 75px;
+		width:80%;
+		margin: 15px auto;
+		color:white;
+	}
+
+	.range{
+		display: inline-block;
+		margin: auto;
+	}
+    
+    button:disabled{
+		background-color: grey;
+    }
+
+	.red{
+		background-color: red;
+	}
+
+	.green{
+		background-color: green;
+	}
+	*{
+		margin: 0;
+		padding:0;
+	}
+	header{
+		background-color: #333;
+		height: 65px;
+		text-align: center;
+		color:white;
+		padding-top: 15px;
+		overflow: hidden;
+	}
+
+
+
+
+

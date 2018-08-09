@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="transformaciones.css">
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="rangestyle.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<header><h1>CSS TRANSFORMACIONES 3D</h1></header>
+
+<div class="container">
+<div id="centro" class="cube rotation">
+	<div class="plane one"><span class="nro">1</span></div>
+	<div class="plane two"><span class="nro">2</span></div>
+	<div class="plane three"><span class="nro">3</span></div>
+	<div class="plane four"><span class="nro">4</span></div>
+	<div class="plane five"><span class="nro">5</span></div>
+	<div class="plane six"><span class="nro">6</span></div>
+</div>
+<span id="tooltip" style="display: none">Arrastra con el mouse para rotar el objeto</span>	
+</div>
+</div>
+<div class="botones">
+	<button class="btn" disabled onclick="setViewCubo(this)">CUBO</button>
+	<button class="btn" onclick="setViewVista(this)">VISTA</button>
+	<button class="btn" onclick="setViewCilinder(this)">CILINDRO</button>
+
+</div>
+
+<div class="botones-right">
+	<button class="btn red" onclick="toggleRotation(this)">DESACTIVAR ROTACION</button>
+		<button class="btn red" onclick="toggleNumbers(this)">DESACTIVAR NUMEROS</button>
+	<div class="range-container">
+	<span class="range">Opacidad:</span> <span id="opacidad">1</span><input id="selector" type="range" min="0" max="1" step="0.1" value="1">
+	</div>
+	</div>
+<footer>
+<p>Ejemplo realizado por <strong>Axel Vazquez</strong> </p>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

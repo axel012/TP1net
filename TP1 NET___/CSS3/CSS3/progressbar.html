@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<style>
+div:after {
+    content: "";        
+    height: 15px;
+    background: red;        
+	top:15px;
+	left:15px;
+    position: absolute;
+    animation: loader 2s;
+    -webkit-animation: loader 15s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    bottom: 0px;        
+	max-width:250px;
+	border:1px solid black;
+    margin-left: 0;
+}
+
+@keyframes loader {
+    0% {width: 0px;}
+    99% { width: 100%;} 
+}
+
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

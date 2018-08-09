@@ -1,0 +1,182 @@
+a[href*="test"]{
+	color:#f00;
+	font-size: 25px;
+}
+
+a[href^="mailto:"]{
+	background:#444;
+	color:#fff;
+	text-decoration: none;
+}
+
+a[href$=".php"]{
+	font-weight: bold;
+	font-family: sans-serif;
+	color:#00BCD4;
+}
+
+h1 + h2{
+	color:red!important;
+}
+
+h1 ~ h2{
+	color:blue;
+}
+
+.ejemplo-pseudo-1::first-line{
+color:#fff;
+background-color: #888;
+font-size:18px;
+}
+
+.ejemplo-pseudo-2::first-letter{
+color:#fff;
+background-color: #000;
+font-weight: bold;
+font-size:18px;
+}
+
+.ejemplo-pseudo-3{
+font-weight: bold;
+font-size:18px;
+}
+
+.ejemplo-pseudo-3::before{
+content: "yo vengo antes ";
+color:#fff;
+background-color: #000;
+}
+
+
+.ejemplo-pseudo-4::after{
+content: "yo vengo despues";
+color:#fff;
+background-color: #000;
+}
+
+.ejemplo-pseudo-clase-1:nth-child(odd){
+	color: red;
+}
+
+.ejemplo-pseudo-clase-2>li:nth-of-type(even){
+	color: red;
+}
+.ejemplo-pseudo-clase-3>li:first-of-type{
+	color: red;
+}
+
+.ejemplo-pseudo-clase-4>li:last-of-type{
+	color: red;
+}
+
+.ejemplo-pseudo-clase-5>li>span:only-child{
+	color:red;
+}
+
+.ejemplo-pseudo-clase-6>span:only-of-type{
+	color:blue;
+}
+
+.ejemplo-pseudo-clase-7>span:empty{
+	background-color: #000;
+	margin-top: 10px;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+}
+
+
+.ejemplo-pseudo-clase-8{
+	margin:15px auto;
+}
+
+.ejemplo-pseudo-clase-8>input::placeholder{
+color:#fff;
+}
+
+.ejemplo-pseudo-clase-8>input:disabled{
+background-color: red;
+}
+
+.ejemplo-pseudo-clase-8>input:enabled{
+background-color: black;
+color:white;
+}
+
+.ejemplo-pseudo-clase-9{
+	padding-top: 10px;
+}
+
+input[type=checkbox], input[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+select{
+	
+	margin-bottom: 8px;
+}
+
+.ejemplo-pseudo-clase-9>input:checked + label{
+background-color: #000;
+color:#fff;
+}
+
+.ejemplo-pseudo-clase-9>select>option:checked{
+background-color: #000;
+color:white;
+}
+
+
+.ejemplo-column-count{
+	column-count: 2;
+}
+
+.ejemplo-column-width{
+	column-width: 135px;
+}
+
+.ejemplo-column-gap{
+	column-count: 3;
+	column-gap: 15px;
+}
+
+.ejemplo-column-rule{
+	column-count: 3;
+	column-gap: 15px;
+	column-rule: thick dotted blue;
+}
+
+.ejemplo-color-rgba{
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top:26px;
+	left:0px;
+}
+
+.bg-img{
+
+	background-image: url(img.jpg);
+	background-repeat: no-repeat;
+	width:300px;
+	height: 100%;
+	margin: 5px auto;
+}
+
+.fixed-size{
+	height: 330px;
+}
+
+.small{
+	width:60%;
+	height: 60%;
+}
+
+.ejemplo-color-hsl{
+	width: 100%;
+	height: 100;
+	background-color: hsla(0,50%,50%,0.5);
+}
