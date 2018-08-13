@@ -1,0 +1,137 @@
+body{
+background:beige;
+}
+.stage{
+margin:auto;
+width:400px;
+height:400px;
+background:black;
+margin-top:25px;
+}
+
+.ball{
+width:15px;
+height:15px;
+background:white;
+border:1px solid beige;
+box-shadow:0px 0px 25px yellow;
+border-radius:100%;
+position:absolute;
+}
+
+.brick{
+	width:100px;
+	height:25px;
+	background:red;
+	position:absolute;
+	transition: opacity 1s ease-in-out;
+	opacity:1;
+}
+
+.pad{
+	background:white;
+	position:absolute;
+	
+}
+
+
+.lose-menu{
+	width:400px;
+	height:400px;
+	background-color: rgba(245, 245, 220, 0.25);
+    position: absolute;
+	z-index:1;
+}
+
+.hide{
+	display:none;
+}
+
+.lose-menu .lose-msg{
+	padding-top:150px;
+	text-align: center;
+    color: white;
+	font-size:1vw;
+}
+.lose-menu .lose-msg h1{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.btn-play-again{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	color:white;
+	cursor:pointer;
+	border:2px solid white;
+	font-size:2vw;
+}
+
+.btn-lose{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	color:white;
+	cursor:pointer;
+	border:2px solid white;
+	font-size:2vw;
+}
+
+.btn-lose:hover{
+	background:blue;
+}
+
+.btn-play-again:hover{
+	background:blue;
+}
+
+.btn-back-menu{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	color:white;
+	cursor:pointer;
+	margin-top:-2px;
+	border:2px solid white;
+	font-size:2vw;
+}
+
+.btn-back-menu:hover{
+	background:blue;
+}
+
+
+.win-menu{
+	width:400px;
+	height:400px;
+	background-color: rgba(245, 245, 220, 0.25);
+    position: absolute;
+	z-index:1;
+}
+
+.win-menu .win-msg{
+	padding-top:150px;
+	text-align: center;
+    color: white;
+	font-size:1vw;
+}
+.win-menu .win-msg h1{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.controls{
+	width:400px;
+	margin:auto;
+	text-align:center;
+}
+
+.controls h2{
+	margin:0;
+}
+
+.controls h3
+{	text-align:left;
+	margin:2px;
+}
