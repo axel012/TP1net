@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+body{
+overflow-x:hidden;
+}
+.container{
+width: 80%;
+height:300px;
+}
+
+.horse{
+background:url("horseanim.png");
+width:128px;
+height:128px;
+}
+/* 11 frames / 20 frames/s  -> 0.55s */
+.fast{
+animation: ride 0.55s steps(11) infinite, move 6s linear infinite;
+
+}
+/* 11 frames / 8 frames/s  -> 1.375s */
+
+.slow{
+animation: ride 1.375s steps(11) infinite, move 10s linear infinite;
+
+}
+/* 11 frames / 10 frames/s -> 1.1s */
+.med{
+animation: ride 1.1s steps(11) infinite, move 8s linear infinite;
+
+}
+
+/* 11 frames / 60 frames/s -> 0.183s */
+.sixty-fps{
+animation: ride 0.183s steps(11) infinite, move 4s linear infinite;
+
+}
+
+
+
+@keyframes ride {
+  0% {
+    background-position-x: 0px;
+  }
+  
+  100% {
+    background-position-x: -1408px;
+  }
+}
+
+@keyframes move{
+0%{
+transform:translateX(-128px);
+}
+100%{
+transform:translateX(1200px);
+}
+}
+
+.img-sprite{
+border:2px solid black;
+}
+
+.overlay{
+position:absolute;
+width:7vw;
+height:7vw;
+border:1px solid red;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<span>60 fps</span>
+<div class="horse sixty-fps"></div>
+<hr>
+<span>20 fps</span>
+<div class="horse fast"></div>
+<hr>
+<span>10 fps</span>
+<div class="horse med"></div>
+<hr>
+<span>8 fps</span>
+<div class="horse slow"></div>
+<hr>
+
+<div class="img-sprite">
+<h2>Sprite ancho:128px | alto:128px - Cantidad de frames: 11</h2>
+<div class="overlay"></div>
+<img src="horseanim.png" style="width:100%"></img>
+</div>
+</div>
+
+</body>
+</html>
