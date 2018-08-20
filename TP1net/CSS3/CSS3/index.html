@@ -75,27 +75,25 @@
 						<li><a hreF="#sel-nuevos-attr-color-hsl">hsl y hsla</a></li>
 						</ul></li>
 						
-							<li class="nav-sub"><a href="#">Propiedades fondo</a> <ul>
-						<li><a hreF="#">background-origin</a></li>
+							<li class="nav-sub"><a href="#propiedades-fondo">Propiedades fondo</a> <ul>
+						<li><a hreF="#bg-origin">background-origin</a></li>
 						<li><a hreF="#">background-clip</a></li>
-						<li><a hreF="#">border-box</a></li>
-						<li><a hreF="#">padding-box</a></li>
-						<li><a hreF="#">content-box</a></li>
 						</ul></li>
-						
+						<li class="nav-sub"><a href="#bordes-redondeados">Propiedades de bordes</a> 
+						</li>
 					</ul>
 				</li>
 				
 				
-				<li class="nav-title"><a href="#">Nuevos efectos</a>
+				<li class="nav-title"><a href="#sel-nuevos-efectos">Nuevos efectos</a>
 					<ul class="hidden">
-							<li class="nav-sub"><a href="#">Sombra-Brillo</a> <ul>
-						<li><a hreF="#">box-shadow</a></li>
-						<li><a hreF="#">text-shadow</a></li>
+							<li class="nav-sub"><a href="#sombra-brillo">Sombra-Brillo</a> <ul>
+						<li><a href="#box-shadow">box-shadow</a></li>
+						<li><a href="#text-shadow">text-shadow</a></li>
 						</ul></li>
 						
-						<li class="nav-sub"><a href="#">Efecto-3D</a> <ul>
-						<li><a hreF="#">Ejemplo</a></li>
+						<li class="nav-sub"><a href="#efecto3d">Efecto-3D</a> <ul>
+						<li><a href="#efecto3d">Ejemplo</a></li>
 						</ul></li>
 						
 						
@@ -472,7 +470,7 @@ Este ejemplo muestra como se veria de igual forma.
 	<li>ITEM 1: <span> soy un span </span></li>
 	<li>ITEM 2</li>
 	<li>ITEM 3</li>
-	<span> Soy el unico en este padre de este tipo</span>
+	<span> Soy el unico hijo de este tipo</span>
 </ul>
 </div>
 
@@ -610,6 +608,12 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 <h3  id="sel-nuevos-attr-col-column-count">column-count</h3>
 <p>Define el número de columnas de un elemento.</p>
 </div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Establece dos columnas*/</p></span><span class="at">.ejemplo-column-count</span><span class="p">{</span>
+	<span class="nl">column-count</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+
 
 <div class="elem">
 	<span class="label">.ejemplo-column-count</span>
@@ -628,7 +632,11 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 <p>Define el tamaño minimo de la columna. El número de columnas sera el maximo numero de columnas que puedan caber sin que ninguna columna tenga un ancho menor que ese valor.</p>
 </div>
 
-
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Establece un ancho de columna de 135px*/</p></span><span class="at">.ejemplo-column-width</span><span class="p">{</span>
+	<span class="nl">column-width</span><span class="p">:</span> <span class="m">135px</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
 
 <div class="elem">
 	<span class="label">.ejemplo-column-width</span>
@@ -646,8 +654,12 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 <p>Define el tamaño del espaciado entre columnas</p>
 </div>
 
-
-
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Establece 3 columnas separadas por 15px*/</p></span><span class="at">.ejemplo-column-gap</span><span class="p">{</span>
+	<span class="nl">column-count</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+	<span class="nl">column-gap</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
 <div class="elem">
 	<span class="label">.ejemplo-column-gap</span>
 	<p class="ejemplo-column-gap">
@@ -663,6 +675,14 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 <h3  id="sel-nuevos-attr-col-column-rule">column-rule</h3>
 <p>La propiedad CSS establece el ancho, el estilo y el color de la regla (línea) dibujada entre columnas en un diseño de varias columnas.column-rule</p>
 </div>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Establece 3 columnas separadas por 15px*/</p></span><span class="at">.ejemplo-column-rule</span><span class="p">{</span>
+	<span class="nl">column-count</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+	<span class="nl">column-gap</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+	<span class="nl">column-rule</span><span class="p">:</span> <span class="m">thick dotted blue</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+
 
 
 
@@ -686,7 +706,7 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 
 <div class="content">
 	
-<h3  id="sel-nuevos-attr-color-rgba">rgba</h3>
+<h3  id="sel-nuevos-attr-color-rgba">RGBA</h3>
 <p>Se utiliza el mismo sistema de color RGB pero se añade un canal alpha</p>
 </div>
 
@@ -706,6 +726,16 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 <img src="color_wheel_hsl.png" alt="Rueda de colores HSL" class="content-img small">
 </div>
 
+<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Define un color de tono 0, saturacion 50%, brillo 50% y 0.5 de </p>
+<p>transparencia*/</p>
+</span><span class="at">.ejemplo-color-hsl</span><span class="p">{</span>
+	<span class="nl">widht</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">thick dotted hsla(0,50%,50%,0.5)</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
 
 <div class="elem">
 	<span class="label">.ejemplo-color-hsl</span>
@@ -713,7 +743,133 @@ La especificidad de la pseudo-clase :not es la especificidad de su argumento. La
 	</div>
 
 </div>
+<hr>
+<h2  id="propiedades-fondo" class="content">Propiedades de fondo</h2>
 
+<hr class="content">
+
+<div class="content">
+	
+<h3  id="bg-origin">Background Origin</h3>
+<p>Es una version mejorada de background-position que permite definir el origen de coordenadas desde el cual posicionamos la imagen. Podemos darle 3 valores:</p>
+<ol class="normal">
+<li>border-box: toma como origen de coordenadas el borde del elemento.</li>
+<li>padding-box: toma como origen de coordenadas el padding del elemento.</li>
+<li>content-box: toma como origen de coordenadas el punto donde comienza el contenido del elemento.</li>
+</ol>
+</div>
+<hr>
+	<h2  id="bordes-redondeados" class="content">Propiedades de Borde</h2>
+<p class="content">Tareas tan complicadas hasta ahora como crear una esquina redondeada o usar imagenes en los bordes, resultan ahora una tarea muy sencilla.</p>
+<hr class="content">
+<div class="content">
+<h3  id="border-radius">Border-radius</h3>
+	<p>Simplifica la implementacion de los bordes redondeados.</p>
+	</div>
+	<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Define dos bordes de 15px de radio*/</p>
+</span><span class="at">.border-radius</span><span class="p">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+	<span class="nl">border</span><span class="p">:</span> <span class="m">solid blue 8px</span><span class="p">;</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">blue</span><span class="p">;</span>
+	<span class="nl">border-radius</span><span class="p">:</span> <span class="m">15px 15px</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+
+
+	<div class="elem">
+	<span class="label">.ejemplo-border-radius</span>
+	<div class="redondo"></div></div>
+
+
+<hr>
+
+
+<h1  id="sel-nuevos-efectos">Nuevos efectos</h1>
+
+<hr class="content">
+
+	
+<h2  id="sombra-brillo" class="content">Sombra y brillo</h2>
+<p class="content">CSS3 da lugar a nuevos atributos que permite la creacion de sombras y brillos de una forma practica.</p>
+<hr class="content">
+
+
+
+<div class="content">
+<h3  id="box-shadow">Box-shadow</h3>
+	<p>Permite aplicar sombras a las capas con mucha facilidad. Se codifica box-shadow:distanciaX distanciaY difuminado color</p>
+	</div>
+	<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Define sombras inferior y lateral derecha*/</p>
+</span><span class="at">.box-shadow</span><span class="p">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">blue</span><span class="p">;</span>
+	<span class="nl">box-shadow</span><span class="p">:</span> <span class="m">5px 10px 7px rgba(0,0,0,0.5)</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+	
+	
+
+	<div class="elem">
+	<span class="label">.ejemplo-box-shadow</span>
+	<div class="box-shadow"></div></div>
+	<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Define sombras alrededor del cuadro*/</p>
+</span><span class="at">.box-shadow2</span><span class="p">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+	<span class="nl">background-color</span><span class="p">:</span> <span class="m">blue</span><span class="p">;</span>
+	<span class="nl">box-shadow</span><span class="p">:</span> <span class="m">5px 10px 7px rgba(0,0,0,0.5),
+	-5px -10px 7px rgba(0,0,0,0.5)</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+	
+	<div class="elem">
+	<span class="label">.ejemplo-box-shadow2</span>
+	<div class="box-shadow2"></div></div>
+	
+<hr class="content">
+	<div class="content">
+<h3  id="text-shadow">Text-shadow</h3>
+	<p>Inicialmente este atributo se encontraba en CSS2, posteriormente eliminado en CSS2.1. Finalmente CSS3 vuelve a incorporarlo. Text-shadow realiza una sombra ajustada a los propios caracteres del texto.</p>
+	</div>
+	<figure class="highlight">
+  <pre><code class="language-css" data-lang="css"><span class="c">
+<p>/*Define sombras inferior y lateral derecha en los textos*/</p>
+</span><span class="at">.text-shadow</span><span class="p">{</span>
+	
+	<span class="nl">text-shadow</span><span class="p">:</span> <span class="m">5px 10px 7px rgba(0,0,0,0.5)</span><span class="p">;</span>
+	<span class="p">}</span>
+</code></pre></figure>
+	
+	<div class="elem">
+	<span class="label">.text-shadow</span>
+	<div class="text-shadow"><p>Este es un parrafo que tiene sombras.</p></div>
+	</div>
+	
+	<div class="elem">
+	<span class="label">.text-shadow2</span>
+	<div class="text-shadow2"><p>Este es un parrafo que tiene brillo.</p></div>
+	</div>
+	
+	<hr class="content">
+
+	
+	<h2  id="efecto3d" class="content">Efecto 3D</h2>
+	<p class="content">A partir de lo anterior podemos generar un efecto 3D. Aqui un ejemplo:</p>
+	
+	<div class="elem">
+	<span class="label">.3D</span>
+	<div class="tresD"><p>CSS3<br> 
+	con efectos 3D</p></div>
+	</div>
+	
+	
 	<footer>
 	  <p>Soy un footer</p>
   <p>Contacto: <a href="mailto:someone@example.com">

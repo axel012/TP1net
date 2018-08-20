@@ -180,3 +180,49 @@ color:white;
 	height: 100;
 	background-color: hsla(0,50%,50%,0.5);
 }
+.redondo{
+	margin: 10px;
+	border: solid blue 8px; 
+	background-color: blue;
+	border-radius: 15px 10px ;	
+}
+.box-shadow{
+	height: 20px;
+	margin:20px;
+	background-color: blue;
+	box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+}
+.box-shadow2{
+	height: 20px;
+	margin:20px;
+	background-color: blue;
+	box-shadow: 5px 10px 7px rgba(0,0,0,0.5),-5px -10px 7px rgba(0,0,0,0.5);
+}
+.text-shadow{
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif";
+	text-shadow:5px 5px 7px rgba(0,0,0,0.5);
+}
+
+.text-shadow2{
+	text-align: center;
+	height: 30px;
+	margin: 10px;
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	color: white;
+	background-color: black;
+	text-shadow: 0px 0px 20px rgba(0,255,0,1), 0px 0px 20px rgba(0,255,0,1), 0px 0px 20px rgba(0,255,0,1);
+}
+.tresD{
+	border-radius: 30% ;
+	color: white;
+	text-align: center;
+	height:100%;
+	margin:5% 15%;
+	background-color: blue;
+	font-size: 40px;
+	box-shadow: 5px 10px 7px rgba(0,0,0,0.5);
+	font-family:Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	width: 70%;
+	text-shadow: 1px 1px 0px rgba(230,230,230,1),2px 2px 0px rgba(200,200,200,1),3px 3px 0px rgba(180,180,180,1),4px 4px 0px rgba(160,160,160,1),5px 5px 0px rgba(0,0,0,1),8px 8px 20px rgba(0,0,0,0.5);
+	
+}
