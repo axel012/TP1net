@@ -224,7 +224,7 @@ footer{
     z-index: 2;
    top: 0;
    left: 0;
-   background: url(expand_overlay.png);
+   background: url(../img/expand_overlay.png);
 }
 
 .expand-overlay-fixed{
@@ -251,7 +251,7 @@ footer{
     width: 36px;
     height: 36px;
     cursor: pointer;
-    background:url(close.png);
+    background:url(../img/close.png);
 
 }
 
