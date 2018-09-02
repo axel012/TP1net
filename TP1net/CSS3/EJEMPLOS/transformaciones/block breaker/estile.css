@@ -28,6 +28,10 @@ position:absolute;
 	opacity:1;
 }
 
+.brick:nth-of-type(odd){
+	background:blue;
+}
+
 .pad{
 	background:white;
 	position:absolute;
